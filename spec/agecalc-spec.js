@@ -5,6 +5,11 @@ describe('AgeCalc', function() {
     let input = new AgeCalc(1);
     expect(input.yearsToSeconds()).toEqual(31536000);
   });
+
+  it('will convert years into seconds', function() {
+    let input = new AgeCalc(5);
+    expect(input.yearsToSeconds()).toEqual(157680000);
+  });
 });
   // it('will scan an input and return the vowels count', function() {
   //   let vowel = new Poem("The red foxes", "Jump over the fence.", "Likes to eat apples!");
