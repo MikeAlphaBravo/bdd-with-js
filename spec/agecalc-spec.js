@@ -1,18 +1,11 @@
 import { AgeCalc } from './../js/agecalc.js';
 
 describe('AgeCalc', function() {
-  // let now = require('moment');
   let date;
-  // let testingDate;
-  // let dateTesting;
-  // let currentTestingDate;
   let inputDate;
   beforeEach(function(){
-  //   testingDate = "1982-27-07";
     date = new AgeCalc();
     inputDate = "1982-07-27";
-  //   dateTesting = now(testingDate);
-  //   currentTestingDate = now();
   });
 
   it('will convert years into seconds', function() {
@@ -23,6 +16,7 @@ describe('AgeCalc', function() {
     expect(date.yearsToSeconds(5)).toEqual(157680000);
   });
 
+  //intent is to get this passing and THEN round it so it's usable elsewhere.
   it('will return the age of the user in years', function() {
     expect(date.userAge("1982-07-27")).toEqual(35.24090091140284);
   });
@@ -45,6 +39,14 @@ describe('AgeCalc', function() {
   //
   // it('will check for user age on Jupiter', function() {
   //   expect(date.ageEarth(inputDate)).toEqual(415.1)
+  // });
+  //
+  // it('will calculate the difference between life expectancy and users age', function() {
+  //   let ageOnEarth = date.ageEarth(inputDate);
+  //   let country = "France";
+  //   let gender = "female";
+  //   let lifeExpectancy = date.userStats(country, gender);
+  //   expect(lifeExpectancy - ageOnEarth).toEqual(58);
   // });
 
 });
