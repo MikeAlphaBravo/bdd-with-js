@@ -29,7 +29,7 @@ describe('AgeCalc', function() {
   });
 
   it('will check for user age on Mercury', function() {
-    expect(dateAge.ageEarth(35)).toEqual(8.4)
+    expect(dateAge.ageMercury(35)).toEqual(8)
   });
 
   // it('will check for user age on Venus', function() {

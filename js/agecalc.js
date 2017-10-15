@@ -22,13 +22,13 @@ export class AgeCalc {
 
   ageEarth(age) {
     const earth = 1;
-    let ageOnEarth = Math.round((age * earth) *100)/100;
+    let ageOnEarth = Math.round(age * earth);
     return ageOnEarth;
   }
 
   ageMercury(age) {
     const mercury = 0.24;
-    let ageOnMercury = Math.round((age * mercury) *100)/100;
+    let ageOnMercury = Math.round(age * mercury);
     return ageOnMercury;
   }
 
