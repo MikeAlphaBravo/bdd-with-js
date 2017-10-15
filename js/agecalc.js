@@ -1,5 +1,3 @@
-import { moment } from './../node_modules/moment/moment.js';
-
 export class AgeCalc {
   constructor(age, date) {
   this.age = age;
