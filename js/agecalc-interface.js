@@ -3,7 +3,6 @@ import { AgeCalc } from './../js/agecalc.js';
 $(document).ready(function() {
   $('#age-form').submit(function(event) {
     event.preventDefault();
-
     let inputBirthdate = $('#inputBirthdate').val();
     let solarAge = new AgeCalc();
     let solarAgeResult = solarAge.userAge(inputBirthdate);
@@ -12,7 +11,17 @@ $(document).ready(function() {
     let venusAgeResult = solarAge.ageVenus(solarAgeResult);
     let marsAgeResult = solarAge.ageMars(solarAgeResult);
     let jupiterAgeResult = solarAge.ageJupiter(solarAgeResult);
-    console.log(earthAgeResult, mercuryAgeResult, venusAgeResult, marsAgeResult, jupiterAgeResult);
+
+
+    let inputGender = $('#gender').val();
+    let inputCountry = $('#country').val();
+    let demographics = solarAge.userStats(inputCountry, inputGender);
+
+    let checkInputtedLifeExpectancy = solarAge.checkLifeExpectancy(solarAgeResult, demographics);
+    console.log(checkInputtedLifeExpectancy);
+
+
+
 
     let result = dateAge.userAge();
     if (result === true) {
