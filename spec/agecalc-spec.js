@@ -32,18 +32,18 @@ describe('AgeCalc', function() {
     expect(dateAge.ageMercury(35)).toEqual(8)
   });
 
-  // it('will check for user age on Venus', function() {
-  //   expect(dateAge.ageEarth(inputDate)).toEqual(21.7)
-  // });
-  //
-  // it('will check for user age on Mars', function() {
-  //   expect(dateAge.ageEarth(inputDate)).toEqual(65.8)
-  // });
-  //
-  // it('will check for user age on Jupiter', function() {
-  //   expect(dateAge.ageEarth(inputDate)).toEqual(415.1)
-  // });
-  //
+  it('will check for user age on Venus', function() {
+    expect(dateAge.ageVenus(35)).toEqual(21)
+  });
+
+  it('will check for user age on Mars', function() {
+    expect(dateAge.ageMars(35)).toEqual(65)
+  });
+
+  it('will check for user age on Jupiter', function() {
+    expect(dateAge.ageJupiter(35)).toEqual(415)
+  });
+
   // it('will calculate the difference between life expectancy and users age', function() {
   //   let ageOnEarth = dateAge.ageEarth(inputDate);
   //   let country = "France";

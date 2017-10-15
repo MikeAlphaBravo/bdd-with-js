@@ -22,34 +22,34 @@ export class AgeCalc {
 
   ageEarth(age) {
     const earth = 1;
-    let ageOnEarth = Math.round(age * earth);
+    let ageOnEarth = Math.floor(age * earth);
     return ageOnEarth;
   }
 
   ageMercury(age) {
     const mercury = 0.24;
-    let ageOnMercury = Math.round(age * mercury);
+    let ageOnMercury = Math.floor(age * mercury);
     return ageOnMercury;
   }
 
-  // ageVenus(age) {
-  //   const venus = 0.62;
-  //   let ageOnVenus = Math.round((age * venus) *100)/100;
-  //   return ageOnVenus;
-  // }
-  //
-  // ageMars(age) {
-  //   const mars = 1.88;
-  //   let ageOnMars = Math.round((age * mars) *100)/100;
-  //   return ageOnMars;
-  // }
-  //
-  // ageJupiter(age) {
-  //   const jupiter = 11.86;
-  //   let ageOnJupiter = Math.round((age * jupiter) *100)/100;
-  //   return ageOnJupiter;
-  // }
-  //
+  ageVenus(age) {
+    const venus = 0.62;
+    let ageOnVenus = Math.floor(age * venus);
+    return ageOnVenus;
+  }
+
+  ageMars(age) {
+    const mars = 1.88;
+    let ageOnMars = Math.floor(age * mars);
+    return ageOnMars;
+  }
+
+  ageJupiter(age) {
+    const jupiter = 11.86;
+    let ageOnJupiter = Math.floor(age * jupiter);
+    return ageOnJupiter;
+  }
+
   // userStats(country, gender) {
   //   let lifeExpectancy = 0;
   //   if(gender === "male" && country === "United States") {
