@@ -12,23 +12,11 @@ $(document).ready(function() {
     let marsAgeResult = solarAge.ageMars(solarAgeResult);
     let jupiterAgeResult = solarAge.ageJupiter(solarAgeResult);
 
-
     let inputGender = $('#gender').val();
     let inputCountry = $('#country').val();
     let demographics = solarAge.userStats(inputCountry, inputGender);
 
     let checkInputtedLifeExpectancy = solarAge.checkLifeExpectancy(solarAgeResult, demographics);
-    console.log(checkInputtedLifeExpectancy);
 
-
-
-
-    let result = dateAge.userAge();
-    if (result === true) {
-      $('#result').text("");
-    }
-    else {
-      $('#result').text("");
-    }
   });
 });
