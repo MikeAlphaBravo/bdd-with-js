@@ -70,9 +70,9 @@ export class AgeCalc {
   checkLifeExpectancy(age, lifeExpectancy) {
     let returnedDiffInLifeExpectancy = lifeExpectancy - age;
     if(returnedDiffInLifeExpectancy > 0) {
-      alert(`You have ${returnedDiffInLifeExpectancy} years to rock it!`);
+      alert(`LIFE EXPECTANCY: You have ${returnedDiffInLifeExpectancy} years to rock it!`);
     } else {
-      alert(`You have already passed your life expectancy, you're pretty much amazing!`);
+      alert(`LIFE EXPECTANCY: You have already passed your life expectancy, you're pretty much amazing!`);
     }
   }
 }

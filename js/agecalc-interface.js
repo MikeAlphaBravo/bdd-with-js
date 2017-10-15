@@ -18,5 +18,11 @@ $(document).ready(function() {
 
     let checkInputtedLifeExpectancy = solarAge.checkLifeExpectancy(solarAgeResult, demographics);
 
+    $(".results").show();
+    $("#showResultsEarth").text(earthAgeResult);
+    $("#showResultsMercury").text(mercuryAgeResult);
+    $("#showResultsVenus").text(venusAgeResult);
+    $("#showResultsMars").text(marsAgeResult);
+    $("#showResultsJupiter").text(jupiterAgeResult);
   });
 });
