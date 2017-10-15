@@ -21,6 +21,7 @@ describe('AgeCalc', function() {
     expect(date.userAge("1982-07-27")).toEqual(35.24090091140284);
   });
 
+
   // it('will check for user age on Earth', function() {
   //   expect(date.ageEarth(inputDate)).toEqual(35)
   // });
