@@ -44,12 +44,18 @@ describe('AgeCalc', function() {
     expect(dateAge.ageJupiter(35)).toEqual(415)
   });
 
-  // it('will calculate the difference between life expectancy and users age', function() {
-  //   let ageOnEarth = dateAge.ageEarth(inputDate);
-  //   let country = "France";
-  //   let gender = "female";
-  //   let lifeExpectancy = dateAge.userStats(country, gender);
-  //   expect(lifeExpectancy - ageOnEarth).toEqual(58);
-  // });
+  it('will calculate the difference between life expectancy and users age', function() {
+    let ageOnEarth = dateAge.ageEarth(35);
+    let country = "France";
+    let gender = "female";
+    let returnedLifeExpectancy = dateAge.userStats(country, gender);
+    expect(returnedLifeExpectancy - ageOnEarth).toEqual(58);
+  });
 
+  it('will alert user of their age compared to their life expectancy', function() {
+    let lifeExpectancy = 75
+    let age = 100
+    let diff = lifeExpectancy - age;
+    expect(diff).toEqual(-25);
+  });
 });

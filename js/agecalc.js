@@ -50,30 +50,31 @@ export class AgeCalc {
     return ageOnJupiter;
   }
 
-  // userStats(country, gender) {
-  //   let lifeExpectancy = 0;
-  //   if(gender === "male" && country === "United States") {
-  //     lifeExpectancy = 80;
-  //   } else if (gender === "female" && country === "United States") {
-  //     lifeExpectancy = 84;
-  //   } else if (gender === "male" && country === "Russia") {
-  //     lifeExpectancy = 48;
-  //   } else if (gender === "female" && country === "Russia") {
-  //     lifeExpectancy = 54;
-  //   } else if (gender === "male" && country === "France") {
-  //     lifeExpectancy = 91;
-  //   } else if (gender === "female" && country === "France") {
-  //     lifeExpectancy = 93;
-  //   } else {
-  //     lifeExpectancy = 75;
-  //   } return lifeExpectancy;
-  // }
-  //
-  // checkLifeExpectancy(age, lifeExpectancy) {
-  //   if(lifeExpectancy - age > 0) {
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-  // }
+  userStats(country, gender) {
+    let lifeExpectancy;
+    if(gender === "male" && country === "United States") {
+      lifeExpectancy = 80;
+    } else if (gender === "female" && country === "United States") {
+      lifeExpectancy = 84;
+    } else if (gender === "male" && country === "Russia") {
+      lifeExpectancy = 48;
+    } else if (gender === "female" && country === "Russia") {
+      lifeExpectancy = 54;
+    } else if (gender === "male" && country === "France") {
+      lifeExpectancy = 91;
+    } else if (gender === "female" && country === "France") {
+      lifeExpectancy = 93;
+    } else {
+      lifeExpectancy = 75;
+    } return lifeExpectancy;
+  }
+
+  checkLifeExpectancy(age, lifeExpectancy) {
+    let returnedDiffInLifeExpectancy = lifeExpectancy - age;
+    if(returnedDiffInLifeExpectancy > 0) {
+      alert(`You have ${returnedDiffInLifeExpectancy} years to rock it!`);
+    } else {
+      alert(`You have already passed your life expectancy, you're pretty much amazing!`);
+    }
+  }
 }
