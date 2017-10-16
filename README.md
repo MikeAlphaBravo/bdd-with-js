@@ -10,8 +10,8 @@ _Create a calculator that takes a users birthdate and returns a list of their ag
 
 ## User Story
 
-* As a user, I want to be able to input my birthdate.
-* As a user, I want to be able to add my gender and country of residence.
+* _As a user, I want to be able to input my birthdate._
+* _As a user, I want to be able to add my gender and country of residence._
 
 ## Specs
 
@@ -34,7 +34,7 @@ clone folder_
 
 ## Known Bugs
 
-_Unable to use functionality.  Tests built and functions all hinging on one major function left to get working._
+_Working through polish and better user experience but all basic functionality working to my knowledge, please let me know when you find or test and exception!_
 
 ## Support and contact details
 
